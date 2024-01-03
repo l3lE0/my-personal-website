@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
+
+header {
+    background: url('content/queenswoodside.jpg');
+    color: #fff;
+    text-align: center;
+    background-attachment: fixed;
+    /* This is important for the parallax effect */
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+    /* or any appropriate height */
+
+}
+
+header h1 {
+    margin-top: 15%;
+    font-size: 60px;
+}
+
+/*Button positioning in container*/
+.button-container {
+    text-align: center;
+    margin: 20px;
+}
+
+/* BUtton padding */
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Styles for the download button */
+#download-resume {
+    background-color: transparent;
+    /* Transparent background */
+    color: white;
+    /* White text */
+    border: 2px solid white;
+    /* White border */
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the download button */
+#download-resume:hover {
+    background-color: white;
+    /* White background on hover */
+    color: black;
+    /* Black text on hover */
+    cursor: pointer;
+}
+
+header,
+section,
+footer {
+    padding: 20px;
+}
+
+h1,
+h2 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #444;
+    text-align: center;
+}
+
+section {
+    background: #fff;
+    margin: 10px 0;
+}
+
+article {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    background: white;
+    color: black;
+}
+
+a {
+    color: #0077B5;
+    /* LinkedIn brand color */
+}
+
+a:hover {
+    color: #005983;
+}
+
+/* Style the tab buttons */
+.tab-button {
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: background-color 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab-button:hover {
+    background-color: #ddd;
+}
+
+/* Style the tab content */
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+/* Style for active tab content */
+.active {
+    display: block;
+}
+
+#about-me {
+    background-color: #fff;
+    /* White background for the section */
+    margin: 20px auto;
+    /* Centers the section and adds margin around it */
+    padding: 20px;
+    /* Padding inside the section */
+    width: 80%;
+    /* Adjust the width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow */
+    border-radius: 10px;
+    /* Rounded corners */
+    transition: box-shadow 0.3s;
+    /* Smooth transition for shadow effect */
+    background-color: rgb(222, 222, 222);
+
+}
+
+/* Hover effect for sections */
+#about-me:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow when hovered */
+}
+
+#work-experience {
+    background-color: #fff;
+    /* White background for the section */
+    margin: 20px auto;
+    /* Centers the section and adds margin around it */
+    padding: 20px;
+    /* Padding inside the section */
+    width: 80%;
+    /* Adjust the width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow */
+    border-radius: 10px;
+    /* Rounded corners */
+    transition: box-shadow 0.3s;
+    /* Smooth transition for shadow effect */
+    background-color: rgb(222, 222, 222);
+}
+
+/* Hover effect for sections */
+#work-experience:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow when hovered */
+}
+
+#education {
+    background-color: #fff;
+    /* White background for the section */
+    margin: 20px auto;
+    /* Centers the section and adds margin around it */
+    padding: 20px;
+    /* Padding inside the section */
+    width: 80%;
+    /* Adjust the width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow */
+    border-radius: 10px;
+    /* Rounded corners */
+    transition: box-shadow 0.3s;
+    /* Smooth transition for shadow effect */
+    background-color: rgb(222, 222, 222);
+}
+
+/* Hover effect for sections */
+#education:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow when hovered */
+}
+
+#skills {
+    background-color: #fff;
+    /* White background for the section */
+    margin: 20px auto;
+    /* Centers the section and adds margin around it */
+    padding: 20px;
+    /* Padding inside the section */
+    width: 80%;
+    /* Adjust the width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow */
+    border-radius: 10px;
+    /* Rounded corners */
+    transition: box-shadow 0.3s;
+    /* Smooth transition for shadow effect */
+    background-color: rgb(222, 222, 222);
+}
+
+/* Hover effect for sections */
+#skills:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow when hovered */
+}
+
+#contact {
+    background-color: #fff;
+    /* White background for the section */
+    margin: 20px auto;
+    /* Centers the section and adds margin around it */
+    padding: 20px;
+    /* Padding inside the section */
+    width: 80%;
+    /* Adjust the width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow */
+    border-radius: 10px;
+    /* Rounded corners */
+    transition: box-shadow 0.3s;
+    /* Smooth transition for shadow effect */
+    background-color: rgb(222, 222, 222);
+}
+
+/* Hover effect for sections */
+#contact:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow when hovered */
+}

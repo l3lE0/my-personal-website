@@ -3,30 +3,101 @@
 
 <head>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>My Personal Website</title>
 </head>
 
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Email: your.email@example.com | Phone: 123-456-7890</p>
-    </header>
 
+    <header>
+        <h1>Leonardo Anzola</h1>
+        <div class="button-container">
+            <button id="download-resume">Download Resume</button>
+        </div>
+    </header>
     <section id="about-me">
         <h2>About Me</h2>
-        <p>Short bio or profile summary...</p>
+        <p>
+            As a dynamic and results-oriented professional, I bring over 7 years of rich experience across various
+            industries, including quantitative data analysis, software engineering, and investment operations. My
+            journey as a life-long learner has recently guided me towards a comprehensive focus on the intersection of
+            investment processes and technology, particularly in application and software development. With a solid
+            foundation in financial acumen, I am adept at enhancing, supporting, and maintaining critical investment
+            processes and systems, contributing significantly to the investment sector and its allied industries.
+            My role encompasses more than just technical expertise; as a self-starter with a keen entrepreneurial
+            mindset, I excel in managing and prioritizing multiple projects. I am adept at communicating effectively
+            with a diverse range of individuals and consistently deliver superior results, even in the face of
+            fluctuating industry trends and market conditions. My analytical leadership is characterized by a meticulous
+            approach to prioritization, investigation, and the resolution of complex issues across multiple channels.
+            This skill set allows me to effectively cater to a broad spectrum of clients and stakeholders, ensuring
+            their needs and expectations are not just met but exceeded.
+            <br>
+            <br>
+            My roots trace back to South America, Colombia, but I was raised in the bustling city of New York. The 18
+            years spent in NYC instilled in me the essence of grit and determination. Amidst challenges, I have strived
+            for learning and accomplishment, transcending the barriers often faced due to class and race. My journey is
+            a testament to the unwavering support of my single mother and the community that surrounded me – some of
+            whom continue to be part of my life, while others are cherished memories. This diverse tapestry of
+            experiences has shaped me into a professional who not only thrives in challenging environments but also
+            values the power of resilience and community in achieving success.
+        </p>
     </section>
 
     <section id="work-experience">
         <h2>Work Experience</h2>
         <article>
-            <h3>Job Title at Company Name</h3>
-            <p>Start Date - End Date</p>
+            <h3>Senior Data Analyst at Barings</h3>
+            <p>March 2022 to Present</p>
             <ul>
-                <li>Job responsibility or achievement</li>
-                <li>Another responsibility or achievement</li>
-                <!-- More items -->
+                <li>Assist the HY and Bank Loan team and utilize FactSet to pull and deliver custom reports for
+                    Portfolio Managers and Clients.</li>
+                <li>Demonstrated exceptional ability in developing innovative processes to analyze large jumps in VaR,
+                    TE and PV values while writing technical memos that document data processing decisions and summarize
+                    the quality of data.</li>
+                <li>Perform monthly/QTRly/YTD attribution QC for 10+ accounts and work with State Street and MSCI to
+                    resolve related issues.</li>
+                <li>Leverage expertise in conducting qualitative and quantitative research using mixed-method approaches
+                    to data analysis.</li>
+                <li>Lead and perform cross-functional collaboration with internal and external teams to manage large
+                    datasets and systems.</li>
             </ul>
+        </article>
+        <h3>Quantitative Analyst at AllianceBernstein</h3>
+        <p>February 2018 to March 2022</p>
+        <ul>
+            <li>Developed data models to transform raw data into actionable insights while performing assessments and
+                documentation.</li>
+            <li>Led monthly return/contribution investigations for 40+ multi-asset funds and calculated security return
+                overrides using SQL.</li>
+            <li>Worked with equity, fixed income, and multi-asset teams and consistently met deadlines for high-priority
+                accounts and projects.</li>
+            <li>Streamlined the Risk and Performance measurements reporting and back-end table query to enhance system
+                efficiency.</li>
+            <li>Improved system by participating in testing and inserting JIRA tickets. Revamped a legacy process done
+                on a QTR basis.</li>
+            <li>Exhibited leadership skills by training new hires on the basics of the workflow and more unique
+                case-by-case scenarios.</li>
+        </ul>
+        </article>
+        </article>
+        <h3>Junior Software Engineer at Astute Business Technology Consultants LLC</h3>
+        <p>September 2016 to February 2018</p>
+        <ul>
+            <li>Supported continuous improvement throughout the development life cycle of software applications using
+                Python.</li>
+            <li>Conducted code reviews to maintain quality and standards. Proven ability in debugging and fixing issues
+                in Python applications.</li>
+            <li>Collaborated with the team to understand and implement project requirements and assisted in managing
+                project deliverables.</li>
+            <li>Supported project life-cycle activities, including gathering new requirements, testing, documentation,
+                and project write-ups.</li>
+            <li>Utilized SQL for creating, updating, and managing databases architecture as well as maintain migration
+                documentation.</li>
+            <li>Proficient in the usage of Git and GitHub for version control, ensuring efficient team collaboration and
+                code management.</li>
+            <li>Skilled in maintaining and debugging web applications developed in HTML, CSS, and JavaScript, ensuring
+                high-quality user interfaces and interactions.</li>
+        </ul>
         </article>
         <!-- More job entries -->
     </section>
@@ -34,29 +105,51 @@
     <section id="education">
         <h2>Education</h2>
         <article>
-            <h3>Degree, School Name</h3>
-            <p>Graduation Year</p>
-            <!-- Additional details if necessary -->
+            <h3>Borough of Manhattan Community College</h3>
+            <p>BA in Business Administration</p>
+            <h3>Software Engineering | SNHU Online</h3>
+            <p>BA in Computer Science</p>
+            <h3>Flatiron School</h3>
+            <p>Software Engineering Certificate PENDING</p>
         </article>
-        <!-- More education entries -->
+
     </section>
 
     <section id="skills">
         <h2>Skills</h2>
-        <ul>
-            <li>Skill 1</li>
-            <li>Skill 2</li>
-            <!-- More skills -->
-        </ul>
+        <div class="tabs">
+            <button class="tab-button" onclick="openCategory('office')">Microsoft Office Suite</button>
+            <button class="tab-button" onclick="openCategory('development')">Software Development</button>
+            <button class="tab-button" onclick="openCategory('database')">Database Management</button>
+            <button class="tab-button" onclick="openCategory('others')">Others</button>
+        </div>
+
+        <div id="office" class="tab-content">
+            <p>Microsoft Office (Word, PowerPoint, Excel, Excel VBA, Outlook, OneNote)</p>
+        </div>
+
+        <div id="development" class="tab-content">
+            <p>Python, HTML, CSS, JavaScript, Ubuntu, WSL, Git</p>
+        </div>
+
+        <div id="database" class="tab-content">
+            <p>Microsoft Azure, Microsoft SQL, SQL</p>
+        </div>
+
+        <div id="others" class="tab-content">
+            <p>AWS, Bloomberg Terminal, WordPress, JIRA, FactSet</p>
+        </div>
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Feel free to contact me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
+        <p>Feel free to contact me through Linkedin <a href="https://www.linkedin.com/in/leonardo-anzola/"
+                target="_blank"><i class="fab fa-linkedin"></i></a>.
+        </p>
     </section>
 
     <footer>
-        <p>© 2024 Your Name</p>
+        <p>© 2024 Leonardo Anzola</p>
     </footer>
     <script src="script.js"></script>
 </body>

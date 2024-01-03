@@ -1,4 +1,14 @@
-const h2 = document.createElement("h2");
-h2.textContent = "This content added by JavaScript";
+// Download resume button
+const downloadButton = document.getElementById('download-resume');
+downloadButton.addEventListener('click', () => {
+    // Replace with the path to your resume PDF
+    window.open('content/resume.pdf');
+});
 
-document.querySelector("body").appendChild(h2);
+function openCategory(categoryName) {
+    const contentElements = document.getElementsByClassName("tab-content");
+    for (let i = 0; i < contentElements.length; i++) {
+        contentElements[i].style.display = "none";
+    }
+    document.getElementById(categoryName).style.display = "block";
+}
